@@ -1,0 +1,35 @@
+程序启动：
+运行GPTest中的main()方法
+
+简单测试功能模块：
+一.psql常用功能
+- database(create、alter、drop)
+- schema(create、alter、drop)
+- table(create、alter、drop、truncate)
+- table(insert、select、update、delete)
+- order by、group by、having
+- and、or、not、like、in、not in、between条件
+- 内连接、左外连接、右外连接、全外连接、跨连接
+- 视图、序列、函数、触发器、事务、索引
+- max、min、avg、sum和as别名、日期和时间函数
+- limit offset
+- 集合(union、intersect、except)、子查询、serial自增长、权限控制
+
+二.gp服务器信息
+- 主机名
+- 以太链路信息
+- IP地址信息
+- 路由信息
+- 操作系统内核
+- 内存(MB)
+- CPU
+- 块设备
+- 操作系统配置文件 静态配置信息（/etc/sysctl.conf、/etc/security/limits.conf、/etc/security/limits.d/*.conf、
+/etc/sysconfig/iptables-config、/etc/fstab、/etc/rc.local、/etc/selinux/config、/var/spool/cron 用户cron配置、
+chkconfig --list、iptables -L -v -n -t filter 动态配置信息、iptables -L -v -n -t nat 动态配置信息、
+iptables -L -v -n -t mangle 动态配置信息、iptables -L -v -n -t raw 动态配置信息、
+sysctl -a 动态配置信息、mount 动态配置信息、selinux 动态配置信息、/var/log/boot.log、/var/log/cron、
+/var/log/dmesg、/var/log/messages、/var/log/secure、/var/log/wtmp）
+
+三.gp服务
+- gpfdist的启动和外部表导入数据、导出数据
